@@ -1,0 +1,5 @@
+core_cm7.h:2147:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+myCLI.c:10:6:vUART_CLI_Init	16	static
+myCLI.c:28:6:HAL_UART_RxCpltCallback	24	static
+myCLI.c:60:6:vExecuteCLIcmd	24	static
+myCLI.c:143:13:HAL_TIM_PeriodElapsedCallback	16	static
