@@ -92,8 +92,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ETH_Init();
-  MX_USB_OTG_FS_PCD_Init();
   MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   vUART_CLI_Init(&huart7, &uart_receive_handle);
@@ -113,8 +111,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-    TOGGLE_LED(LED_RED);
+    __PRINT_TIME_STAMP();
+    TOGGLE_LED(LED_GREEN);
     HAL_Delay(500);
     HAL_IWDG_Refresh(&hiwdg);
     /* USER CODE END WHILE */

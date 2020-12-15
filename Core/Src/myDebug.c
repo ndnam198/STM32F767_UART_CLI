@@ -134,7 +134,7 @@ void vIWDG_Init(IWDG_HandleTypeDef *hiwdg, uint32_t millis)
 	}
 
 #ifdef PRINT_DEBUG
-	printf("Set IWDG %lums\r\n", IWDG_TIME);
+	printf("Set IWDG %ums\r\n", IWDG_TIME);
 #endif
 }
 
